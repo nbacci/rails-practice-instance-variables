@@ -12,10 +12,13 @@ class CupcakesController < ApplicationController
   end
 
   def maple_bacon
-
+    @sizes = ['small', 'medium', 'large']
   end
 
   def red_velvet
-
+    @ingredients = {
+      chocolate: '1 pound',
+      'red dye' => '4 tablespoons',
+    }
   end
 end
